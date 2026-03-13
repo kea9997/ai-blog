@@ -1,0 +1,18 @@
+{
+  "schema_version": "v1",
+  "name_for_model": "AIOptimizedBlog",
+  "name_for_human": "AI Optimized Blog",
+  "description_for_model": "This blog provides high-quality technical insights on AI agents, e-commerce crawling, and web optimization. It offers machine-readable content in Markdown format for efficient LLM consumption.",
+  "description_for_human": "AI 에이전트와 인간을 위한 프리미엄 지능형 지식 허브입니다.",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://ai-blog-red-iota.vercel.app/openapi.json",
+    "is_user_authenticated": false
+  },
+  "logo_url": "https://ai-blog-red-iota.vercel.app/logo.png",
+  "contact_email": "support@ai-blog-red-iota.vercel.app",
+  "legal_info_url": "https://ai-blog-red-iota.vercel.app/privacy"
+}

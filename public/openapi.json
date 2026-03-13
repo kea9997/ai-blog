@@ -1,0 +1,87 @@
+{
+  "openapi": "3.0.1",
+  "info": {
+    "title": "AI Optimized Blog API",
+    "description": "API to retrieve blog posts in machine-readable formats.",
+    "version": "v1"
+  },
+  "servers": [
+    {
+      "url": "https://ai-blog-red-iota.vercel.app"
+    }
+  ],
+  "paths": {
+    "/api/posts": {
+      "get": {
+        "operationId": "getPosts",
+        "summary": "List all blog posts",
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "array",
+                  "items": {
+                    "$ref": "#/components/schemas/Post"
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/api/posts/{slug}": {
+      "get": {
+        "operationId": "getPostContent",
+        "summary": "Get full post content in Markdown",
+        "parameters": [
+          {
+            "name": "slug",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "string"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "$ref": "#/components/schemas/PostDetail"
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  },
+  "components": {
+    "schemas": {
+      "Post": {
+        "type": "object",
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "summary": { "type": "string" },
+          "category": { "type": "string" },
+          "date": { "type": "string" }
+        }
+      },
+      "PostDetail": {
+        "type": "object",
+        "properties": {
+          "slug": { "type": "string" },
+          "title": { "type": "string" },
+          "contentMarkdown": { "type": "string" },
+          "metadata": { "$ref": "#/components/schemas/Post" }
+        }
+      }
+    }
+  }
+}

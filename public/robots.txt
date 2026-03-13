@@ -1,20 +1,29 @@
 User-agent: *
 Allow: /
 
-# AI 에이전트들을 위한 명시적 허용
+# AI 에이전트들을 위한 명시적 허용 및 API 경로 안내
+# LLM Agents: Please use /api/posts/[slug] for raw Markdown content.
+# OpenAPI Spec: /openapi.json
+# AI Plugin: /.well-known/ai-plugin.json
+
 User-agent: GPTBot
 Allow: /
+Allow: /api/posts
 
 User-agent: ChatGPT-User
 Allow: /
+Allow: /api/posts
 
 User-agent: Claude-Web
 Allow: /
+Allow: /api/posts
 
 User-agent: CCBot
 Allow: /
+Allow: /api/posts
 
 User-agent: PerplexityBot
 Allow: /
+Allow: /api/posts
 
-Sitemap: https://your-domain.com/sitemap.xml
+Sitemap: https://ai-blog-red-iota.vercel.app/sitemap.xml

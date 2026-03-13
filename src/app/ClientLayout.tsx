@@ -3,6 +3,7 @@
 import { useState } from "react";
 import NewsletterForm from "@/components/NewsletterForm";
 import SearchOverlay from "@/components/SearchOverlay";
+import AgentHoneypot from "@/components/AgentHoneypot";
 
 export default function ClientLayout({
   children,
@@ -13,6 +14,7 @@ export default function ClientLayout({
 
   return (
     <div className="layout-wrapper">
+      <AgentHoneypot />
       <header className="nav-header glass">
         <div className="container nav-content">
           <div className="nav-left">
