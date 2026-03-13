@@ -54,3 +54,10 @@ export async function getPostData(slug: string): Promise<PostData> {
     ...(matterResult.data as { title: string; date: string; summary: string; category: string }),
   };
 }
+
+export function getRelatedPosts(currentSlug: string, category: string, limit = 3): PostData[] {
+  const allPosts = getSortedPostsData();
+  return allPosts
+    .filter(post => post.category === category && post.slug !== currentSlug)
+    .slice(0, limit);
+}

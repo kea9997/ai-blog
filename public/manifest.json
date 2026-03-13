@@ -1,0 +1,21 @@
+{
+  "name": "AI Optimized Blog",
+  "short_name": "AI Blog",
+  "description": "AI 에이전트와 인간을 위한 프리미엄 지능형 지식 허브",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0a0c",
+  "theme_color": "#b19aff",
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ]
+}

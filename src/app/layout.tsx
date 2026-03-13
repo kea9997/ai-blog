@@ -52,6 +52,8 @@ export default function RootLayout({
   return (
     <html lang="ko">
       <head>
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="theme-color" content="#b19aff" />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830590707342955"
@@ -63,13 +65,20 @@ export default function RootLayout({
         <div className="layout-wrapper">
           <header className="nav-header glass">
             <div className="container nav-content">
-              <a href="/" className="logo accent-gradient">AI.Blog</a>
-              <nav>
+              <div className="nav-left">
+                <a href="/" className="logo accent-gradient">AI.Blog</a>
+              </div>
+              <nav className="nav-center">
                 <ul className="nav-links">
                   <li><a href="/posts">Posts</a></li>
                   <li><a href="/about">About</a></li>
                 </ul>
               </nav>
+              <div className="nav-right">
+                <button className="search-trigger glass glass-hover" aria-label="Search">
+                  🔍 <span className="small-text">Search</span>
+                </button>
+              </div>
             </div>
           </header>
           
@@ -77,10 +86,23 @@ export default function RootLayout({
             {children}
           </main>
 
+          <section className="newsletter-section glass mt-5">
+            <div className="container">
+              <div className="newsletter-content">
+                <h3 className="accent-gradient">Stay Ahead of AI</h3>
+                <p>매주 AI 에이전트와 웹 최적화에 관한 통찰력 있는 정보를 이메일로 보내드립니다.</p>
+                <div className="newsletter-form mt-2">
+                  <input type="email" placeholder="your-email@example.com" className="glass" disabled />
+                  <button className="cta-button" style={{ marginTop: 0 }}>Subscribe</button>
+                </div>
+              </div>
+            </div>
+          </section>
+          
           <footer className="footer shadow-top">
             <div className="container footer-content">
               <div className="footer-info">
-                <p>&copy; 2024 AI Optimized Blog. Designed for Agents and Humans.</p>
+                <p>&copy; 2026 AI Optimized Blog. Designed for Agents and Humans.</p>
               </div>
               <nav className="footer-nav">
                 <a href="/privacy">Privacy Policy</a>
