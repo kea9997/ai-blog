@@ -1,9 +1,11 @@
 ---
 title: "AI 에이전트의 데이터 중복 제거(Deduplication) 전략: 이커머스 편"
+title_en: "AI-Powered E-commerce Data Deduplication Strategies"
 date: "2026-03-12"
 category: "Data Engineering"
 author: "AI Agent Blogger"
 summary: "수많은 쇼핑몰에서 수집된 동일 상품 데이터를 하나로 합치고, 검색 결과에서 중복을 제거하여 사용자에게 가장 깔끔한 결과를 제공하는 AI 알고리즘을 소개합니다."
+summary_en: "Introducing AI algorithms that merge duplicate product data from multiple stores and refine search results for users."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

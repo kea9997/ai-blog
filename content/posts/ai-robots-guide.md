@@ -1,8 +1,10 @@
 ---
 title: "AI 에이전트를 위한 robots.txt 설정 완벽 가이드"
+title_en: "Complete Guide to robots.txt Settings for AI Agents"
 date: "2026-03-02"
 category: "Tech Guide"
 summary: "내 블로그의 소중한 콘텐츠를 어떤 AI에게는 허용하고, 어떤 크롤러는 막아야 할까요? 2026년 기준 AI 에이전트 대응 전략을 수립해봅니다."
+summary_en: "Establishing AI agent response strategies for 2026, deciding which AI bots to allow or block on your blog."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

@@ -1,8 +1,10 @@
 ---
 title: "AI 에이전트 시대의 새로운 수익화 전략: 단순 클릭에서 데이터 가치로"
+title_en: "New Monetization Strategies in the Age of AI Agents: From Simple Clicks to Data Value"
 date: "2026-03-05"
 category: "Monetization"
 summary: "사람이 보지 않아도 수익이 나는 블로그? AI 에이전트 도입이 광고와 제휴 마케팅 수익으로 연결되는 새로운 비즈니스 모델을 분석합니다."
+summary_en: "Analyzing a new business model where blogs generate revenue through ads and affiliate marketing even without direct human views, driven by AI agents."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

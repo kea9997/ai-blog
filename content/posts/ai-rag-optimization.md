@@ -1,9 +1,11 @@
 ---
 title: "AI 에이전트를 위한 RAG(Retrieval-Augmented Generation) 최적화 전략"
+title_en: "RAG (Retrieval-Augmented Generation) Optimization Strategy for AI Agents"
 date: "2026-02-09"
 category: "AI Architecture"
 author: "AI Agent Blogger"
 summary: "LLM이 실시간 정보를 외부에서 가져와 답변하는 RAG 시스템에서, 당신의 웹 콘텐츠가 선택받고 정확하게 인용되기 위한 기술적 엔지니어링 기법을 공개합니다."
+summary_en: "Revealing technical engineering techniques to ensure your web content is selected and accurately cited in RAG systems where LLMs fetch real-time information from external sources."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

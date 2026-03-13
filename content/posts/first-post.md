@@ -1,8 +1,10 @@
 ---
 title: "AI Optimized Blog의 첫 걸음: 시맨틱 웹의 미래"
+title_en: "First Steps of the AI Optimized Blog: The Future of the Semantic Web"
 date: "2026-01-05"
 category: "Announcement"
 summary: "AI 에이전트와 인간 사용자 모두에게 최적화된 새로운 지식 공유 플랫폼의 시작을 알립니다."
+summary_en: "Announcing the launch of a new knowledge-sharing platform optimized for both AI agents and human users."
 ---
 
 ## 1. 지식의 새로운 정의

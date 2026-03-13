@@ -6,7 +6,9 @@ import Link from 'next/link';
 interface Post {
   slug: string;
   title: string;
+  title_en: string;
   summary: string;
+  summary_en: string;
   category: string;
 }
 
@@ -39,7 +41,9 @@ export default function SearchOverlay({ onClose }: { onClose: () => void }) {
     }
     const filtered = posts.filter(post => 
       post.title.toLowerCase().includes(query.toLowerCase()) ||
+      post.title_en?.toLowerCase().includes(query.toLowerCase()) ||
       post.summary.toLowerCase().includes(query.toLowerCase()) ||
+      post.summary_en?.toLowerCase().includes(query.toLowerCase()) ||
       post.category.toLowerCase().includes(query.toLowerCase())
     ).slice(0, 8);
     setResults(filtered);

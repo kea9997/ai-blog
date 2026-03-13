@@ -1,8 +1,10 @@
 ---
 title: "AI 에이전트 도입을 위한 검색 최적화(SEO) 필수 체크리스트"
+title_en: "Essential SEO Checklist for AI Agent Implementation"
 date: "2026-03-02"
 category: "AI Strategy"
 summary: "단순한 검색 순위를 넘어 AI 에이전트(LLM)가 정보를 수집하고 사용자에게 추천하는 과정을 이해하고, 내 블로그를 선택받게 만드는 전략을 공개합니다."
+summary_en: "Understanding how AI agents collect and recommend information to make your blog stand out, beyond just search engine rankings."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

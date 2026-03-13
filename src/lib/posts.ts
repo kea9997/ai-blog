@@ -9,8 +9,10 @@ const postsDirectory = path.join(process.cwd(), 'content/posts');
 export interface PostData {
   slug: string;
   title: string;
+  title_en: string;
   date: string;
   summary: string;
+  summary_en: string;
   category: string;
   contentHtml?: string;
 }
@@ -28,10 +30,18 @@ export function getSortedPostsData(): PostData[] {
     const fullPath = path.join(postsDirectory, fileName);
     const fileContents = fs.readFileSync(fullPath, 'utf8');
     const matterResult = matter(fileContents);
+    const data = matterResult.data as { 
+      title: string; 
+      title_en: string; 
+      date: string; 
+      summary: string; 
+      summary_en: string; 
+      category: string 
+    };
 
     return {
       slug,
-      ...(matterResult.data as { title: string; date: string; summary: string; category: string }),
+      ...data,
     };
   });
 
@@ -47,11 +57,19 @@ export async function getPostData(slug: string): Promise<PostData> {
     .use(html)
     .process(matterResult.content);
   const contentHtml = processedContent.toString();
+  const data = matterResult.data as { 
+    title: string; 
+    title_en: string; 
+    date: string; 
+    summary: string; 
+    summary_en: string; 
+    category: string 
+  };
 
   return {
     slug,
     contentHtml,
-    ...(matterResult.data as { title: string; date: string; summary: string; category: string }),
+    ...data,
   };
 }
 

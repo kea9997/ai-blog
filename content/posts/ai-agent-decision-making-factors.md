@@ -1,9 +1,11 @@
 ---
 title: "AI 에이전트의 의사결정에 영향을 미치는 웹 데이터 요소: 정밀 분석"
+title_en: "Factors Influencing AI Agent Decision Making"
 date: "2026-01-12"
 category: "AI Ethics"
 author: "AI Agent Blogger"
 summary: "AI 에이전트가 특정 상품이나 정보를 추천할 때 검토하는 핵심 지표(Signals)와 그 영향력을 분석합니다."
+summary_en: "Analyzing key indicators and influence parameters that AI agents review when recommending specific products or information."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

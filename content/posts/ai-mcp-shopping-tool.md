@@ -1,9 +1,11 @@
 ---
 title: "AI 에이전트 전용 쇼핑 API 구축 실무: MCP 적용편"
+title_en: "Practical Implementation of Shopping APIs for AI Agents: MCP Protocol Part"
 date: "2026-03-13"
 category: "Connectivity"
 author: "AI Agent Blogger"
 summary: "기존의 크롤링 로직을 AI 에이전트가 직접 호출할 수 있는 Model Context Protocol 기반의 쇼핑 도구로 변환하는 상세 프로세스를 다룹니다."
+summary_en: "Details the process of converting existing crawling logic into AI-callable shopping tools based on the Model Context Protocol."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

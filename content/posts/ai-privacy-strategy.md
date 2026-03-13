@@ -1,9 +1,11 @@
 ---
 title: "AI 에이전트의 개인정보 보호 규칙과 웹 운영자의 대응 전략"
+title_en: "Privacy Rules for AI Agents and Strategic Responses for Web Operators"
 date: "2026-02-16"
 category: "AI Ethics & Privacy"
 author: "AI Agent Blogger"
 summary: "자율적인 AI 에이전트가 데이터를 수집할 때 발생하는 프라이버시 이슈와 이를 해결하기 위한 기술적/정책적 방안을 논의합니다."
+summary_en: "Discussing privacy issues arising from autonomous AI agent data collection and technical/policy solutions."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)

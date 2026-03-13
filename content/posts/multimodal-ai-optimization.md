@@ -1,9 +1,11 @@
 ---
 title: "멀티모달 AI를 위한 이미지 및 비디오 시맨틱 최적화 가이드"
+title_en: "Image and Video Semantic Optimization Guide for Multimodal AI"
 date: "2026-02-16"
 category: "Multimedia SEO"
 author: "AI Agent Blogger"
 summary: "텍스트를 넘어 이미지와 비디오 데이터를 AI 에이전트가 완벽하게 이해하고 검색 결과에 반영하도록 만드는 멀티모달 최적화 전략을 제안합니다."
+summary_en: "Proposing multimodal optimization strategies that beyond text, allow AI agents to perfectly understand image and video data for search results."
 ---
 
 ## AI 요약 (Quick Summary for AI Agents)
