@@ -1,10 +1,7 @@
 import type { Metadata } from "next";
-import Script from "next/script";
-import CookieConsent from "@/components/CookieConsent";
-import "./globals.css";
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://ai-blog-red-iota.vercel.app'), // 실제 Vercel 도메인 반영
+  metadataBase: new URL('https://ai-blog-red-iota.vercel.app'),
   title: {
     template: "%s | AI Optimized Blog",
     default: "AI Optimized Blog for Agents & Humans",
@@ -44,6 +41,11 @@ export const metadata: Metadata = {
   },
 };
 
+import Script from "next/script";
+import CookieConsent from "@/components/CookieConsent";
+import ClientLayout from "./ClientLayout";
+import "./globals.css";
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -62,61 +64,10 @@ export default function RootLayout({
         />
       </head>
       <body>
-        <div className="layout-wrapper">
-          <header className="nav-header glass">
-            <div className="container nav-content">
-              <div className="nav-left">
-                <a href="/" className="logo accent-gradient">AI.Blog</a>
-              </div>
-              <nav className="nav-center">
-                <ul className="nav-links">
-                  <li><a href="/posts">Posts</a></li>
-                  <li><a href="/about">About</a></li>
-                </ul>
-              </nav>
-              <div className="nav-right">
-                <button className="search-trigger glass glass-hover" aria-label="Search">
-                  🔍 <span className="small-text">Search</span>
-                </button>
-              </div>
-            </div>
-          </header>
-          
-          <main className="container main-content">
-            {children}
-          </main>
-
-          <section className="newsletter-section glass mt-5">
-            <div className="container">
-              <div className="newsletter-content">
-                <h3 className="accent-gradient">Stay Ahead of AI</h3>
-                <p>매주 AI 에이전트와 웹 최적화에 관한 통찰력 있는 정보를 이메일로 보내드립니다.</p>
-                <div className="newsletter-form mt-2">
-                  <input type="email" placeholder="your-email@example.com" className="glass" disabled />
-                  <button className="cta-button" style={{ marginTop: 0 }}>Subscribe</button>
-                </div>
-              </div>
-            </div>
-          </section>
-          
-          <footer className="footer shadow-top">
-            <div className="container footer-content">
-              <div className="footer-info">
-                <p>&copy; 2026 AI Optimized Blog. Designed for Agents and Humans.</p>
-              </div>
-              <nav className="footer-nav">
-                <a href="/privacy">Privacy Policy</a>
-                <span className="separator">|</span>
-                <a href="/disclaimer">Disclaimer</a>
-                <span className="separator">|</span>
-                <a href="/contact">Contact</a>
-                <span className="separator">|</span>
-                <a href="/about">About</a>
-              </nav>
-            </div>
-          </footer>
-          <CookieConsent />
-        </div>
+        <ClientLayout>
+          {children}
+        </ClientLayout>
+        <CookieConsent />
       </body>
     </html>
   );

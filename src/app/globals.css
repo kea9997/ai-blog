@@ -1,22 +1,22 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Outfit:wght@400;500;600;700&display=swap');
 
 :root {
-  /* Premium Dark Palette (HSL Based) */
+  /* Premium Dark Palette (HSL Based) - High Contrast Version */
   --bg-deep: 224 15% 4%;
   --bg-card: 224 15% 7%;
   --bg-surface: 224 15% 10%;
   
-  --text-primary: 0 0% 98%;
-  --text-secondary: 220 10% 70%;
-  --text-muted: 220 10% 45%;
+  --text-primary: 0 0% 100%;
+  --text-secondary: 220 15% 85%; /* 밝기 증가 */
+  --text-muted: 220 10% 60%; /* 밝기 증가 */
   
-  --accent-primary: 250 100% 76%;
-  --accent-secondary: 190 100% 70%;
-  --accent-glow: 250 100% 76% / 0.15;
+  --accent-primary: 250 100% 70%; /* 채도/명도 조정 */
+  --accent-secondary: 180 100% 60%; /* 더 눈에 띄는 민트/시안 계열 */
+  --accent-glow: 250 100% 70% / 0.25; /* 광채 강화 */
   
-  --border-subtle: 220 10% 15%;
-  --glass-effect: rgba(255, 255, 255, 0.03);
-  --glass-border: rgba(255, 255, 255, 0.08);
+  --border-subtle: 220 15% 18%;
+  --glass-effect: rgba(255, 255, 255, 0.05); /* 투명도 조정 */
+  --glass-border: rgba(255, 255, 255, 0.15); /* 보더 선명하게 */
   
   --transition-smooth: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
 }
@@ -734,16 +734,19 @@ code {
   font-size: 0.9rem;
 }
 
-/* Newsletter Section */
+/* Newsletter Section Premium */
 .newsletter-section {
-  padding: 5rem 0;
+  padding: 6rem 0;
   text-align: center;
   border-radius: 40px;
   margin: 5rem 1.5rem;
+  background: linear-gradient(145deg, hsl(var(--bg-surface)), hsl(var(--bg-deep)));
+  border: 1px solid var(--accent-glow);
+  box-shadow: 0 20px 40px -10px rgba(0,0,0,0.5);
 }
 
 .newsletter-content h3 {
-  font-size: 2.5rem;
+  font-size: clamp(2rem, 5vw, 3rem);
   margin-bottom: 1rem;
 }
 
@@ -751,21 +754,119 @@ code {
   display: flex;
   justify-content: center;
   gap: 1rem;
-  max-width: 500px;
-  margin-left: auto;
-  margin-right: auto;
+  max-width: 600px;
+  margin: 2.5rem auto 0;
 }
 
 .newsletter-form input {
   flex: 1;
-  padding: 0.8rem 1.5rem;
+  padding: 1.2rem 1.75rem;
   border-radius: 50px;
+  background: rgba(255,255,255,0.05);
+  border: 1px solid var(--glass-border);
   color: white;
+  font-size: 1rem;
   outline: none;
+  transition: var(--transition-smooth);
 }
 
-@media (max-width: 640px) {
-  .newsletter-form {
-    flex-direction: column;
-  }
+.newsletter-form input:focus {
+  border-color: hsl(var(--accent-primary));
+  background: rgba(255,255,255,0.1);
+  box-shadow: 0 0 20px hsl(var(--accent-primary) / 0.1);
+}
+
+.newsletter-success-msg {
+  color: hsl(var(--accent-secondary));
+  font-weight: 600;
+  animation: fadeIn 0.5s ease-out;
+}
+
+/* Search Overlay */
+.search-overlay {
+  position: fixed;
+  inset: 0;
+  background: rgba(5, 5, 7, 0.95);
+  backdrop-filter: blur(20px);
+  z-index: 2000;
+  display: flex;
+  justify-content: center;
+  padding-top: 10vh;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.search-modal {
+  width: 100%;
+  max-width: 700px;
+  padding: 0 1.5rem;
+}
+
+.search-input-wrapper {
+  position: relative;
+  margin-bottom: 2rem;
+}
+
+.search-input-wrapper input {
+  width: 100%;
+  padding: 1.5rem 4rem;
+  border-radius: 20px;
+  background: hsl(var(--bg-surface));
+  border: 2px solid var(--glass-border);
+  font-size: 1.5rem;
+  color: white;
+  outline: none;
+  transition: var(--transition-smooth);
+}
+
+.search-input-wrapper input:focus {
+  border-color: hsl(var(--accent-primary));
+  box-shadow: 0 0 30px hsl(var(--accent-primary) / 0.2);
+}
+
+.search-input-wrapper .search-icon {
+  position: absolute;
+  left: 1.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.5rem;
+}
+
+.search-results {
+  max-height: 50vh;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  padding-right: 0.5rem;
+}
+
+.search-result-item {
+  padding: 1.5rem;
+  border-radius: 16px;
+  background: rgba(255,255,255,0.03);
+  border: 1px solid var(--glass-border);
+  transition: var(--transition-smooth);
+}
+
+.search-result-item:hover {
+  background: rgba(255,255,255,0.08);
+  border-color: hsl(var(--accent-primary) / 0.5);
+  transform: translateX(10px);
+}
+
+.close-search {
+  position: absolute;
+  top: 2rem;
+  right: 2rem;
+  background: none;
+  border: none;
+  color: hsl(var(--text-muted));
+  font-size: 2rem;
+  cursor: pointer;
+  transition: var(--transition-smooth);
+}
+
+.close-search:hover {
+  color: white;
+  transform: rotate(90deg);
 }
