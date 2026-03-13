@@ -1,55 +1,119 @@
+import Image from 'next/image';
+
 export default function About() {
   return (
-    <div className="about-page-container section-padding">
-      <header className="about-header text-center mb-5">
-        <h1 className="accent-gradient">About AI.Blog</h1>
-        <p className="lead-text" style={{ fontSize: '1.2rem', opacity: 0.8, marginTop: '1rem' }}>
-          차세대 웹을 위한 가장 정교한 AI 최적화 지식 공유 플랫폼
-        </p>
-      </header>
-
-      <section className="about-section glass section-padding mb-4" style={{ borderRadius: '24px' }}>
-        <h2 style={{ color: 'hsl(var(--accent-primary))', marginBottom: '1.5rem' }}>🎯 우리의 비전 (Vision)</h2>
-        <p>
-          AI Optimized Blog는 인간 독자에게는 영감을 주는 통찰을, AI 에이전트와 검색 엔진에는 
-          가장 정밀하고 신뢰할 수 있는 데이터를 제공하는 것을 목표로 합니다. 
-          우리는 정보의 구조화(Structuring)가 미래 웹 경쟁력의 핵심이라고 믿습니다.
-        </p>
+    <div className="about-page-container">
+      {/* 1. Hero Section */}
+      <section className="about-hero-section">
+        <Image 
+          src="/about-hero.png" 
+          alt="AI Research and Knowledge Sharing" 
+          className="about-hero-image"
+          fill
+          priority
+        />
+        <div className="about-hero-overlay"></div>
+        <div className="about-hero-content">
+          <h1 className="accent-gradient glow-text mb-4" style={{ fontSize: '4rem' }}>Intelligence Redefined</h1>
+          <p className="lead-text" style={{ fontSize: '1.4rem', color: 'white', opacity: 0.9 }}>
+            우리는 인간의 통찰과 AI의 논리가 결합된 차세대 지식 생태계를 구축합니다.
+          </p>
+        </div>
       </section>
 
-      <div className="grid-2">
-        <div className="about-card">
-          <h3>신뢰와 전문성 (E-E-A-T)</h3>
-          <p>
-            우리는 구글의 <b>Experience(경험), Expertise(전문성), Authoritativeness(권위), Trustworthiness(신뢰)</b> 
-            가이드라인을 엄격히 준수합니다. 모든 콘텐츠는 검증된 데이터를 바탕으로 하며, 
-            저명한 기술 문서를 교차 검증하여 작성됩니다.
-          </p>
+      {/* 2. Stats Section */}
+      <div className="container">
+        <div className="stats-grid">
+          <div className="stat-card">
+            <span className="stat-number accent-gradient">100%</span>
+            <p className="small-text">AI Parser Optimized</p>
+          </div>
+          <div className="stat-card">
+            <span className="stat-number accent-gradient">24/7</span>
+            <p className="small-text">Real-time Indexing</p>
+          </div>
+          <div className="stat-card">
+            <span className="stat-number accent-gradient">A+</span>
+            <p className="small-text">Google Web Vitals</p>
+          </div>
+          <div className="stat-card">
+            <span className="stat-number accent-gradient">Zero</span>
+            <p className="small-text">Hallucination Quality</p>
+          </div>
         </div>
-        <div className="about-card">
-          <h3>투명한 콘텐츠 정책</h3>
-          <p>
-            AI 모델을 활용한 자동화 콘텐츠의 경우에도, 반드시 인간 전문가의 최종 검수와 
-            데이터 팩트체크 과정을 거칩니다. 우리는 정보의 양보다 '무결성'에 집중합니다.
-          </p>
+
+        {/* 3. Our Philosophy */}
+        <section className="about-section mb-5">
+          <h2 className="mb-4" style={{ fontSize: '2.5rem' }}>Our Philosophy</h2>
+          <div className="glass section-padding" style={{ borderRadius: '24px', lineHeight: '2' }}>
+            <p style={{ fontSize: '1.2rem', marginBottom: '1.5rem' }}>
+              "지식은 널리 퍼져야 하지만, 정확한 맥락 위에서만 가치를 갖습니다."
+            </p>
+            <p>
+              AI Optimized Blog는 단순히 글을 쓰는 곳이 아닙니다. 우리는 웹상의 데이터가 AI 에이전트에 의해 
+              어떻게 소비되고 재가공되는지 깊이 연구합니다. 인간에게는 읽기 쉬운 유려한 문장을, 
+              기계에게는 명확한 시맨틱 구조를 제공함으로써 정보의 왜곡 없는 전달(Zero Noise)을 실현합니다.
+            </p>
+          </div>
+        </section>
+
+        {/* 4. Tech Stack Showcase */}
+        <section className="about-section mb-5">
+          <h2 className="mb-4" style={{ fontSize: '2.2rem' }}>Core Technologies</h2>
+          <div className="tech-stack-container" style={{ display: 'flex', flexWrap: 'wrap', gap: '0.5rem' }}>
+            <span className="tech-tag">Next.js 15 (App Router)</span>
+            <span className="tech-tag">TypeScript</span>
+            <span className="tech-tag">Schema.org JSON-LD</span>
+            <span className="tech-tag">Model Context Protocol (MCP)</span>
+            <span className="tech-tag">Edge Computing</span>
+            <span className="tech-tag">Semantic HTML5</span>
+            <span className="tech-tag">LLM-Aware Content Design</span>
+          </div>
+        </section>
+
+        {/* 5. Our Journey Timeline */}
+        <section className="about-section mb-5">
+          <h2 className="mb-4" style={{ fontSize: '2.2rem' }}>Our Journey</h2>
+          <div className="timeline-container">
+            <div className="timeline-item">
+              <h4 style={{ color: 'hsl(var(--accent-primary))' }}>2024.03 - The Beginning</h4>
+              <p>AI 에이전트와 인간의 소통을 위한 시맨틱 블로그 아키텍처 설계 시작.</p>
+            </div>
+            <div className="timeline-item">
+              <h4 style={{ color: 'hsl(var(--accent-primary))' }}>2024.03 - Global Deployment</h4>
+              <p>Vercel Edge Network를 통한 초고속 글로벌 서비스 런칭.</p>
+            </div>
+            <div className="timeline-item">
+              <h4 style={{ color: 'hsl(var(--accent-primary))' }}>2024.03 - AI Optimized Content</h4>
+              <p>10종 이상의 AI 최적화 기술 전문 포스트 발행 및 에이전트 연동 성공.</p>
+            </div>
+          </div>
+        </section>
+
+        {/* 6. Legal & Trust */}
+        <div className="grid-2 mb-5">
+          <div className="about-card">
+            <h3 style={{ marginBottom: '1rem' }}>E-E-A-T Excellence</h3>
+            <p>
+              구글의 검색 품질 가이드라인을 최우선으로 준수하며, 
+              모든 기술 문서는 검증된 공식 오픈소스 및 학술 자료를 기반으로 작성됩니다.
+            </p>
+          </div>
+          <div className="about-card">
+            <h3 style={{ marginBottom: '1rem' }}>User-Centric Policy</h3>
+            <p>
+              우리는 사용자의 데이터를 소중히 여기며, 투명한 개인정보처리방침과 
+              책임 있는 AI 활용 문화를 선도합니다.
+            </p>
+          </div>
         </div>
+
+        <section className="about-footer text-center mt-5 mb-5 section-padding glass" style={{ borderRadius: '24px' }}>
+          <h2 className="mb-3">Ready to Build the Future?</h2>
+          <p className="mb-4">우리의 여정에 함께 하시겠습니까? 협업 모델 및 궁금한 점은 언제든지 문의해 주세요.</p>
+          <a href="/contact" className="cta-button">Contact with Us</a>
+        </section>
       </div>
-
-      <section className="about-section glass section-padding mt-4" style={{ borderRadius: '24px' }}>
-        <h2 style={{ color: 'hsl(var(--accent-primary))', marginBottom: '1.5rem' }}>⚖️ 품질 가이드라인 준수 선언</h2>
-        <p>
-          본 블로그는 사용자에게 부적절한 정보를 제공하는 '스팸 기술'을 지양합니다. 
-          <a href="/disclaimer" className="accent-link">면책 조항</a> 및 <a href="/privacy" className="accent-link">개인정보처리방침</a>을 
-          통해 사용자 권익을 보호하며, 투명한 운영을 약속합니다.
-        </p>
-      </section>
-
-      <section className="about-footer text-center mt-5">
-        <p>
-          지속적인 혁신을 통해 AI 시대의 진정한 지식 허브가 되겠습니다.<br />
-          문의 사항은 <a href="/contact" className="accent-link">Contact Us</a> 채널을 이용해 주세요.
-        </p>
-      </section>
     </div>
   );
 }
