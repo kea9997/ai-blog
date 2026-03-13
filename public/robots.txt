@@ -1,0 +1,20 @@
+User-agent: *
+Allow: /
+
+# AI 에이전트들을 위한 명시적 허용
+User-agent: GPTBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: Claude-Web
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+Sitemap: https://your-domain.com/sitemap.xml
