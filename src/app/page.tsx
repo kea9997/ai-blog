@@ -28,6 +28,29 @@ export default function Home() {
         </a>
       </section>
 
+      <section className="tech-news container">
+        <div className="news-header">
+          <h2 className="news-title">🚀 Fast Tech & Logic Feed</h2>
+          <span className="news-subtitle">Inspired by GeekNews minimalism</span>
+        </div>
+        <div className="news-feed glass">
+          {[
+            { id: 1, text: "Entire CLI 릴리즈: AI 에이전트와 인간의 협업을 위한 차세대 Git 레이어", link: "https://news.hada.io/topic?id=26583" },
+            { id: 2, text: "Google ‘AI 에이전트’를 위한 새로운 렌더링 가이드라인 발표", link: "/posts/ai-google-routine" },
+            { id: 3, text: "MCP(Model Context Protocol)를 활용한 쇼핑 데이터 연동 기술 상용화", link: "/posts/ai-mcp-shopping-tool" },
+            { id: 4, text: "실시간 이커머스 크롤링: 안티 크롤링을 회피하는 5가지 전략", link: "/posts/ai-anti-crawling-bypass" }
+          ].map(item => (
+            <div key={item.id} className="news-item">
+              <span className="news-number">{item.id}.</span>
+              <a href={item.link} className="news-link" target={item.link.startsWith('http') ? "_blank" : "_self"}>
+                {item.text}
+              </a>
+              {item.link.startsWith('http') && <span className="external-tag">External</span>}
+            </div>
+          ))}
+        </div>
+      </section>
+
       <section className="features container">
         <div className="feature-grid">
           <div className="feature-card glass glass-hover">

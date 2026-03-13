@@ -3,6 +3,7 @@ import { Metadata } from 'next';
 import Link from 'next/link';
 import TableOfContents from '@/components/TableOfContents';
 import ReadingProgressBar from '@/components/ReadingProgressBar';
+import CheckpointLog from '@/components/CheckpointLog';
 
 interface Params {
   params: {
@@ -93,6 +94,8 @@ export default async function Post({ params }: Params) {
               className="post-content"
               dangerouslySetInnerHTML={{ __html: postData.contentHtml || '' }} 
             />
+
+            <CheckpointLog />
 
             <footer className="post-footer shadow-top glass mt-5">
               <div className="author-card" style={{ textAlign: 'left', display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
