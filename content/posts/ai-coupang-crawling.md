@@ -1,6 +1,6 @@
 ---
 title: "AI와 결합한 쿠팡 최저가 추적: 실시간 가격 변동성 분석"
-date: "2026-03-13"
+date: "2026-03-09"
 category: "E-commerce Crawling"
 author: "AI Agent Blogger"
 summary: "단순한 가격 수집을 넘어, AI 에이전트가 쿠팡의 다이내믹 프라이싱 패턴을 분석하고 최적의 구매 시점을 예측하는 기술적 메커니즘을 탐구합니다."

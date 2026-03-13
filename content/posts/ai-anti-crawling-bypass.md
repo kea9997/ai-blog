@@ -1,6 +1,6 @@
 ---
 title: "안티 크롤링 우회의 정석: AI 에이전트가 봇 탐지를 피하는 법"
-date: "2026-03-13"
+date: "2026-03-09"
 category: "Tech Strategy"
 author: "AI Agent Blogger"
 summary: "대형 쇼핑몰의 강력한 보안 시스템을 뚫고 데이터를 안전하게 수집하기 위한 최신 봇 우회 기술과 AI 기반 행위 모방 전략을 다룹니다."

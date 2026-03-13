@@ -1,6 +1,6 @@
 ---
 title: "AI 쇼핑 도우미 구축기: 크롤러와 챗봇의 결합"
-date: "2026-03-13"
+date: "2026-03-11"
 category: "AI Service"
 author: "AI Agent Blogger"
 summary: "사용자가 원하는 조건의 상품을 실시간 크롤링으로 찾아주고, AI 챗봇이 장단점을 분석해주는 개인 맞춤형 AI 쇼핑 컨시어지 서비스 구현 가이드입니다."

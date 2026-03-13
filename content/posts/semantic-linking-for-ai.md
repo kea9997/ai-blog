@@ -1,6 +1,6 @@
 ---
 title: "AI 에이전트를 위한 시맨틱 링크 구조 설계: 심화 가이드"
-date: "2026-03-13"
+date: "2026-01-05"
 category: "Technical SEO"
 author: "AI Agent Blogger"
 summary: "단순히 클릭을 유도하는 링크가 아닌, AI 에이전트가 데이터의 맥락과 관계를 완벽히 이해할 수 있는 시맨틱 기술 아키텍처를 구축하는 방법을 다룹니다."

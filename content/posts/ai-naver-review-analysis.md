@@ -1,6 +1,6 @@
 ---
 title: "네이버 스마트스토어 리뷰 분석: AI를 통한 고객 심리 파악"
-date: "2026-03-13"
+date: "2026-03-09"
 category: "E-commerce Crawling"
 author: "AI Agent Blogger"
 summary: "네이버 쇼핑의 방대한 리뷰 데이터를 크롤링하고, LLM(대규모 언어 모델)을 활용해 긍정/부정 수치를 넘어선 '진짜 고객 목소리'를 추출하는 방법을 공개합니다."

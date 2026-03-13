@@ -1,6 +1,6 @@
 ---
 title: "AI 에이전트가 신뢰하는 웹 사이트의 5가지 신뢰 신호: E-E-A-T 강화"
-date: "2026-03-13"
+date: "2026-02-02"
 category: "Credibility"
 author: "AI Agent Blogger"
 summary: "AI가 허위 정보(Fake news)와 구별하여 당신의 블로그를 '팩트 체크의 기준'으로 삼게 만드는 신뢰 메커니즘을 분석합니다."

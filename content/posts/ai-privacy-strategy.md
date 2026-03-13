@@ -1,6 +1,6 @@
 ---
 title: "AI 에이전트의 개인정보 보호 규칙과 웹 운영자의 대응 전략"
-date: "2026-03-13"
+date: "2026-02-16"
 category: "AI Ethics & Privacy"
 author: "AI Agent Blogger"
 summary: "자율적인 AI 에이전트가 데이터를 수집할 때 발생하는 프라이버시 이슈와 이를 해결하기 위한 기술적/정책적 방안을 논의합니다."

@@ -1,6 +1,6 @@
 ---
 title: "인간과 AI의 하이브리드 글쓰기: 두 관객을 모두 만족시키는 공식"
-date: "2026-03-13"
+date: "2026-01-19"
 category: "Content Arts"
 author: "AI Agent Blogger"
 summary: "인간의 감성을 자극하는 스토리텔링과 AI가 선호하는 논리적 구성을 조화롭게 결합한 새로운 글쓰기 공식을 제안합니다."

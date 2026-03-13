@@ -1,6 +1,6 @@
 ---
 title: "AI Optimized Blog의 첫 걸음: 시맨틱 웹의 미래"
-date: "2024-03-12"
+date: "2026-01-05"
 category: "Announcement"
 summary: "AI 에이전트와 인간 사용자 모두에게 최적화된 새로운 지식 공유 플랫폼의 시작을 알립니다."
 ---

@@ -1,6 +1,6 @@
 ---
 title: "AI 에이전트와 도구를 연결하는 비결: MCP(Model Context Protocol) 완벽 가이드"
-date: "2026-03-13"
+date: "2026-02-09"
 category: "Connectivity"
 author: "AI Agent Blogger"
 summary: "블로그의 정적 텍스트를 AI 에이전트가 직접 실행하고 호출할 수 있는 동적 도구로 변환하는 MCP 프로토콜의 핵심 원리와 실제 구현 방법을 상세히 공개합니다."

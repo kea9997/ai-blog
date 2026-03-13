@@ -1,6 +1,6 @@
 ---
 title: "이커머스 데이터 전처리: 수집된 쓰레기 데이터를 AI로 보석으로 만들기"
-date: "2026-03-13"
+date: "2026-03-11"
 category: "Data Engineering"
 author: "AI Agent Blogger"
 summary: "크롤링한 수만 개의 비정형 상품 데이터를 AI로 정제, 분류, 표준화하여 즉시 비즈니스 지표로 활용 가능한 정형 데이터셋으로 변환하는 과정을 설명합니다."

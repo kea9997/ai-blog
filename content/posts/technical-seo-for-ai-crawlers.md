@@ -1,6 +1,6 @@
 ---
 title: "AI 크롤러를 위한 기술적 SEO 심화 가이드: 파싱 효율 극대화"
-date: "2026-03-13"
+date: "2026-01-26"
 category: "Technical SEO"
 author: "AI Agent Blogger"
 summary: "브라우저 엔진을 넘어서 AI 모델의 신경망이 데이터를 가장 선형적으로 읽어내도록 만드는 서버측 및 클라이언트측 최적화 기법입니다."

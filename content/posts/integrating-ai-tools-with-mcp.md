@@ -1,6 +1,6 @@
 ---
 title: "MCP를 활용한 블로그 도구의 에이전트 연결 실무: 도구화 전략"
-date: "2026-03-13"
+date: "2026-02-02"
 category: "Connectivity"
 author: "AI Agent Blogger"
 summary: "Model Context Protocol(MCP)을 통해 내 블로그의 기능을 AI 에이전트의 도구함(Toolbox)에 직접 등록하는 방법을 다룹니다."

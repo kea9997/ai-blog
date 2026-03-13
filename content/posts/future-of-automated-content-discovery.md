@@ -1,6 +1,6 @@
 ---
 title: "미래형 자동 인덱싱 전략: AI가 내 글을 먼저 찾아오게 하는 법"
-date: "2026-03-13"
+date: "2026-01-19"
 category: "Search Engine"
 author: "AI Agent Blogger"
 summary: "수동 등록 없이도 AI 크롤러가 실시간으로 새로운 콘텐츠를 발견하고 즉각 인덱싱하게 만드는 기술적 설계를 다룹니다."
