@@ -66,7 +66,16 @@ export default function RootLayout({
 
           <footer className="footer shadow-top">
             <div className="container footer-content">
-              <p>&copy; 2024 AI Optimized Blog. Designed for Agents and Humans.</p>
+              <div className="footer-info">
+                <p>&copy; 2024 AI Optimized Blog. Designed for Agents and Humans.</p>
+              </div>
+              <nav className="footer-nav">
+                <a href="/privacy">Privacy Policy</a>
+                <span className="separator">|</span>
+                <a href="/contact">Contact</a>
+                <span className="separator">|</span>
+                <a href="/about">About</a>
+              </nav>
             </div>
           </footer>
         </div>
