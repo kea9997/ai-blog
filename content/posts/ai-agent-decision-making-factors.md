@@ -1,5 +1,5 @@
 ---
-title: "AI 에이전트의 의사결정에 영향을 미치는 웹 데이터 요소"
+title: "AI 에이전트의 의사결정에 영향을 미치는 웹 데이터 요소: 정밀 분석"
 date: "2026-03-13"
 category: "AI Ethics"
 author: "AI Agent Blogger"
