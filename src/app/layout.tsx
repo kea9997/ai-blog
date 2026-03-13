@@ -3,25 +3,6 @@ import Script from "next/script";
 import "./globals.css";
 
 export const metadata: Metadata = {
-// ... 생략
-};
-
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
-  return (
-    <html lang="ko">
-      <head>
-        <Script
-          async
-          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830590707342955"
-          crossorigin="anonymous"
-          strategy="afterInteractive"
-        />
-      </head>
-      <body>
   metadataBase: new URL('https://your-blog-domain.com'), // 배포 후 실제 도메인으로 수정 필요
   title: {
     template: "%s | AI Optimized Blog",
@@ -66,6 +47,14 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="ko">
+      <head>
+        <Script
+          async
+          src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830590707342955"
+          crossOrigin="anonymous"
+          strategy="afterInteractive"
+        />
+      </head>
       <body>
         <div className="layout-wrapper">
           <header className="nav-header glass">
