@@ -42,6 +42,10 @@ export default function Home() {
             <h3>🚀 Lightning Fast</h3>
             <p>Next.js SSG 기술로 압도적인 로딩 속도와 검색 엔진 최적화(SEO)를 보장합니다.</p>
           </div>
+          <div className="feature-card glass glass-hover">
+            <h3>🌍 Smart Indexing</h3>
+            <p>자동 사이트맵 생성과 구글 검색 콘솔 최적화로 전 세계 모든 플랫폼에 즉시 노출됩니다.</p>
+          </div>
         </div>
       </section>
     </div>
