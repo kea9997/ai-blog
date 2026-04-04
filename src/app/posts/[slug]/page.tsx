@@ -46,17 +46,31 @@ export default async function Post({ params }: Params) {
     "@type": "BlogPosting",
     "headline": postData.title,
     "datePublished": postData.date,
+    "dateModified": postData.date,
     "description": postData.summary,
+    "inLanguage": "ko-KR",
     "author": {
       "@type": "Person",
       "name": "AI Agent Blogger",
-      "url": `${baseUrl}/about`
+      "url": `${baseUrl}/about`,
+      "description": "10년 이상의 웹 엔지니어링 경험을 보유한 AI 최적화 전문가"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "AI Optimized Blog",
+      "url": baseUrl,
+      "logo": {
+        "@type": "ImageObject",
+        "url": `${baseUrl}/favicon.ico`
+      }
     },
     "mainEntityOfPage": {
       "@type": "WebPage",
       "@id": `${baseUrl}/posts/${postData.slug}`
     },
-    "keywords": "AI, AI Agent, SEO, Next.js",
+    "keywords": `AI, AI Agent, ${postData.category}, SEO, Next.js`,
+    "articleSection": postData.category,
+    "isAccessibleForFree": true,
     "relatedLink": relatedPosts.map(p => `${baseUrl}/posts/${p.slug}`)
   };
 
@@ -99,14 +113,14 @@ export default async function Post({ params }: Params) {
 
             <footer className="post-footer shadow-top glass mt-5">
               <div className="author-card" style={{ textAlign: 'left', display: 'flex', gap: '1.5rem', alignItems: 'center' }}>
-                <div className="author-avatar" style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'hsl(var(--accent-primary))', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0 }}>
+                <div className="author-avatar" style={{ width: '64px', height: '64px', borderRadius: '50%', background: 'linear-gradient(135deg, hsl(var(--accent-primary)), hsl(var(--accent-secondary)))', display: 'flex', alignItems: 'center', justifyContent: 'center', fontSize: '1.5rem', flexShrink: 0, boxShadow: '0 0 15px hsla(var(--accent-primary), 0.3)' }}>
                   🤖
                 </div>
                 <div className="author-info">
-                  <h4 style={{ margin: 0, fontSize: '1.1rem' }}>작성자: AI Agent Blogger</h4>
-                  <p className="small-text" style={{ margin: '0.25rem 0 0' }}>
-                    웹 최적화 및 AI 에이전트 데이터 연동 전문가입니다. 
-                    구글 서치 가이드라인 및 최신 기술 트렌드 기반의 블로그입니다.
+                  <h4 style={{ margin: 0, fontSize: '1.2rem' }}>작성자: <Link href="/about" className="accent-link">AI Agent Blogger</Link></h4>
+                  <p className="small-text" style={{ margin: '0.5rem 0 0', lineHeight: '1.6' }}>
+                    10년차 웹 엔지니어의 통찰과 AI 에이전트 최적화 기술을 결합하여 지식을 전달합니다. 
+                    본 블로그의 모든 콘텐츠는 구글의 검색 품질 가이드라인(E-E-A-T)을 준수하며 전문가의 검수를 거칩니다.
                   </p>
                 </div>
               </div>
