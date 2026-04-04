@@ -24,6 +24,7 @@ export default function ClientLayout({
             <ul className="nav-links">
               <li><a href="/posts">Posts</a></li>
               <li><a href="/about">About</a></li>
+              <li><a href="/contact">Contact</a></li>
             </ul>
           </nav>
           <div className="nav-right">
@@ -58,13 +59,15 @@ export default function ClientLayout({
             <p>&copy; 2026 AI Optimized Blog. Designed for Agents and Humans.</p>
           </div>
           <nav className="footer-nav">
-            <a href="/privacy">Privacy Policy</a>
-            <span className="separator">|</span>
-            <a href="/disclaimer">Disclaimer</a>
+            <a href="/about">About</a>
             <span className="separator">|</span>
             <a href="/contact">Contact</a>
             <span className="separator">|</span>
-            <a href="/about">About</a>
+            <a href="/privacy">Privacy Policy</a>
+            <span className="separator">|</span>
+            <a href="/terms">Terms of Use</a>
+            <span className="separator">|</span>
+            <a href="/disclaimer">Disclaimer</a>
           </nav>
         </div>
       </footer>

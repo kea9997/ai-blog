@@ -46,6 +46,34 @@ import CookieConsent from "@/components/CookieConsent";
 import ClientLayout from "./ClientLayout";
 import "./globals.css";
 
+const websiteJsonLd = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "name": "AI Optimized Blog",
+  "url": "https://ai-blog-red-iota.vercel.app",
+  "description": "AI 에이전트와 인간 독자 모두에게 최적화된 기술 지식 공유 플랫폼",
+  "inLanguage": "ko-KR",
+  "publisher": {
+    "@type": "Organization",
+    "name": "AI Optimized Blog",
+    "url": "https://ai-blog-red-iota.vercel.app",
+    "contactPoint": {
+      "@type": "ContactPoint",
+      "email": "kea9997@gmail.com",
+      "contactType": "customer support",
+      "availableLanguage": "Korean"
+    }
+  },
+  "potentialAction": {
+    "@type": "SearchAction",
+    "target": {
+      "@type": "EntryPoint",
+      "urlTemplate": "https://ai-blog-red-iota.vercel.app/posts?q={search_term_string}"
+    },
+    "query-input": "required name=search_term_string"
+  }
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -56,6 +84,11 @@ export default function RootLayout({
       <head>
         <link rel="manifest" href="/manifest.json" />
         <meta name="theme-color" content="#b19aff" />
+        <Script
+          id="website-jsonld"
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(websiteJsonLd) }}
+        />
         <Script
           async
           src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-3830590707342955"
